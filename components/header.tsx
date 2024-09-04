@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Github, Linkedin } from 'lucide-react';
 
 export default function Header() {
   return (
@@ -52,18 +53,16 @@ export default function Header() {
           </ul>
         </nav>
       </div>
-      <ul className="ml-1 mt-8 flex items-center" aria-label="Social media">
+      <ul className="ml-1 mt-8 flex items-center gap-10" aria-label="Social media">
         <li>
-          <Link href="">Github</Link>
+          <Link href="">
+            <Github />
+          </Link>
         </li>
         <li>
-          <Link href="">LinkedIn</Link>
-        </li>
-        <li>
-          <Link href="">Instagram</Link>
-        </li>
-        <li>
-          <Link href="">medium</Link>
+          <Link href="">
+            <Linkedin/>
+          </Link>
         </li>
       </ul>
     </header>
